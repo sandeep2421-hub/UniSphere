@@ -2,7 +2,7 @@ import axios from 'axios';
 import { MOCK_DATA } from './mockData';
 
 // Base URL - change this to your API in production
-const API_BASE = "http://localhost:5001";
+const API_BASE = window.location.hostname === 'localhost' ? "http://localhost:5001" : '';
 
 // Create axios instance
 const api = axios.create({
@@ -17,10 +17,12 @@ let isDemo = false;
 const checkDemoMode = async () => {
   if (isDemo) return true;
   
-  try {
+try {
     await axios.get(`${API_BASE}/users`, { timeout: 2000 });
     return false;
   } catch (error) {
+    console.log('Backend not available, using Vercel/mock mode');
+
     isDemo = true;
     return true;
   }
