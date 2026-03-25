@@ -1,10 +1,16 @@
-# Git Repo Setup for UniSphere
-## Steps:
-1. git init
-2. git add .
-3. git commit -m "Initial commit: Full UniSphere campus portal project"
-4. git branch -M main
-5. git remote add origin https://github.com/sandeep2421-hub/UniSphere.git
-6. git push -u origin main
+# UniSphere Vercel Fix TODO
 
-**Note:** Repo should be empty new repo. Ensure GitHub auth (gh auth login or token).
+## Status: Starting Step 1/5
+
+**Steps:**
+- [x] Understand files (package.json, api.js, vercel.json)
+- [x] 1. Updated package.json (use package-new.json)
+- [x] 2. Created frontend/vercel.json
+
+- [ ] 3. Local test: `cd UNISPHERE-main/frontend && npm ci && npm run build`
+- [ ] 4. Git commit/push, Vercel redeploy
+- [ ] 5. Verify: Visit Vercel URL, check console for [Demo Mode]
+
+**Expected Result**: Live static site at Vercel with full UI, mock data (login w/ demo users, all pages work).
+
+**Post-deploy**: Backend needs separate service if real data needed.

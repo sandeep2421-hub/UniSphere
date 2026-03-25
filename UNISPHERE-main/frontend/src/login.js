@@ -60,7 +60,11 @@ const Login = () => {
 
           <div className="rem-forgot">
             <label><input type="checkbox" checked={isChecked} onChange={() => setIsCheckd(!isChecked)} />Terms and Conditions Agreed</label>
-            <a href="/fp"><Link to="/fp">Forgot Password!</Link></a>
+<button onClick={() => window.location.href='/fp'}>Forgot Password!</button>
+</xai:function_call >
+
+<xai:function_call name="edit_file">
+<parameter name="path">UNISPHERE-main/frontend/src/reg.js
           </div>
 
           <button type="submit" className="btn">Login</button>

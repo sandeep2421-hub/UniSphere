@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./styles.css";
 import Navbar from "./Navbar";
 import Fot from "./footer";
-import fineIcon from "./icons/fine.png";
+// import fineIcon from "./icons/fine.png";
+
 
 const Fines = () => {
   const [fines] = useState([

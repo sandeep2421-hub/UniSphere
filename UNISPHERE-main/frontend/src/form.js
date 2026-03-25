@@ -90,7 +90,8 @@ const DetailsForm = () => {
             <p>To sync Data with your profile Follow from Below Link.!</p>
             <p>You can later setup from your settings.!</p>
             <p>Setup </p>
-            <a href="#">Setup </a>
+<button>Setup</button>
+
           </div>
           <div>
             <label>Privacy Settings:</label>

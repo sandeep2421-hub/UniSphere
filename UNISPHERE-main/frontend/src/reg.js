@@ -50,7 +50,8 @@ const Registration = () => {
       <div className="th">
         <div className="tonav">
           <a className="" href="/">Home</a>
-          <a className="active" href="/login">Login</a>
+<button>Login</button>
+
           <a href="#">Contact</a>
           <a href="#">About</a>
         </div>

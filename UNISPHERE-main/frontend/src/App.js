@@ -15,7 +15,8 @@ import ChatRoom from "./ChatRoom";
 import GeneralChat from "./generalchat";
 import Events from "./events";
 import Qs from "./Qp";
-import F_p from "./ForgotPassword";
+import ForgotPassword from "./ForgotPassword";
+
 import Internships from "./Internships";
 import InternshipDetails from "./InternshipDetails";
 import Hackathons from "./Hackathons";
@@ -48,7 +49,8 @@ function App() {
         <Route path="/" element={<Intro/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/reg" element={<Reg />} />
-        <Route path="/fp" element={<F_p />} />
+        <Route path="/fp" element={<ForgotPassword />} />
+
         <Route path="/details" element={<ProtectedRoute><DetailsForm /></ProtectedRoute>} />
         <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
         <Route path="/mycampus" element={<ProtectedRoute><MyCampus /></ProtectedRoute>} />
