@@ -7,17 +7,17 @@ import { useNavigate } from "react-router-dom";
 
 const Engoulp = () => {
   return (
-    <body>
+    <div>
       <section className="header">
         <nav>
           <a href="/"><img src="t.png" alt="Logo" /></a>
           <div className="nav-link">
             <ul>
-              <li><a href="">EVENTS</a></li>
-              <li><a className="active" href="/login">LOGIN</a></li>
-              <li><a href="/reg">REGISTER</a></li>
-              <li><a href="">ABOUT</a></li>
-              <li><a href="">CONTACT</a></li>
+              <li><button>EVENTS</button></li>
+              <li><button onClick={() => window.location.href='/login'} className="active">LOGIN</button></li>
+              <li><button onClick={() => window.location.href='/reg'}>REGISTER</button></li>
+              <li><button>ABOUT</button></li>
+              <li><button>CONTACT</button></li>
             </ul>
           </div>
         </nav>
@@ -44,7 +44,7 @@ const Engoulp = () => {
         <div className="row">
           <div className="About-col">
             <h3>Connect Across Campuses</h3>
-            <p>“Unite with students from universities across India.”
+            <p>"Unite with students from universities across India."
               Break the barriers of geography with our platform. Chat in
               real-time, join course-specific communities, and build a
               network of peers and mentors to collaborate on ideas and
@@ -53,18 +53,18 @@ const Engoulp = () => {
 
           <div className="About-col">
             <h3>Innovate Together</h3>
-            <p>“Transform your ideas into reality with like-minded
-              collaborators.”<br />
+            <p>"Transform your ideas into reality with like-minded
+              collaborators."<br />
               Showcase your creativity in the Innovation Hub.
               Post your projects, find teammates from other universities,
               and participate in challenges that push the boundaries of
-              what’s possible.
+              what's possible.
             </p>
           </div>
 
           <div className="About-col">
             <h3>Track and Showcase Your Journey</h3>
-            <p>“Your academic progress, redefined.”<br />
+            <p>"Your academic progress, redefined."<br />
               Easily manage and share your marks, grades, and achievements.
               Build a profile that highlights your skills and contributions,
               making it easier to stand out in academia and beyond.</p>
@@ -88,7 +88,7 @@ const Engoulp = () => {
         <p>Made with <i className='bx bx-heart'></i> by SANDEEP</p>
         <p>UniSphere - All Copyrights Reserved</p>
       </section>
-    </body>
+    </div>
   );
 };
 

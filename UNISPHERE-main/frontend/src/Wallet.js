@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./styles.css";
 import Navbar from "./Navbar";
 import Fot from "./footer";
-import walletIcon from "./icons/wallet.png";
+// import walletIcon from "./icons/wallet.png";
+
 
 const Wallet = () => {
   const [balance] = useState("$150.00");
